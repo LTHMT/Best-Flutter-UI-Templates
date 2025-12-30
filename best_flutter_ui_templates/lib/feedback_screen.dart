@@ -2,6 +2,8 @@ import 'package:best_flutter_ui_templates/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class FeedbackScreen extends StatefulWidget {
+  const FeedbackScreen({super.key});
+
   @override
   _FeedbackScreenState createState() => _FeedbackScreenState();
 }
@@ -48,7 +50,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
                   Container(
                     padding: const EdgeInsets.only(top: 16),
                     child: Text(
-                      'Give your best time for this moment.',
+                      'Give your best time for this moment.', 
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 16,

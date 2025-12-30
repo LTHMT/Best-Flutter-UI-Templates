@@ -3,11 +3,10 @@ import 'package:flutter/material.dart';
 
 class HomeDrawer extends StatefulWidget {
   const HomeDrawer(
-      {Key? key,
+      {super.key,
       this.screenIndex,
       this.iconAnimationController,
-      this.callBackIndex})
-      : super(key: key);
+      this.callBackIndex});
 
   final AnimationController? iconAnimationController;
   final DrawerIndex? screenIndex;
@@ -202,7 +201,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
               padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: Row(
                 children: <Widget>[
-                  Container(
+                  SizedBox(
                     width: 6.0,
                     height: 46.0,
                     // decoration: BoxDecoration(
@@ -221,7 +220,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
                     padding: EdgeInsets.all(4.0),
                   ),
                   listData.isAssetsImage
-                      ? Container(
+                      ? SizedBox(
                           width: 24,
                           height: 24,
                           child: Image.asset(listData.imageName,
@@ -270,7 +269,7 @@ class _HomeDrawerState extends State<HomeDrawer> {
                             height: 46,
                             decoration: BoxDecoration(
                               color: Colors.blue.withOpacity(0.2),
-                              borderRadius: new BorderRadius.only(
+                              borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(0),
                                 topRight: Radius.circular(28),
                                 bottomLeft: Radius.circular(0),

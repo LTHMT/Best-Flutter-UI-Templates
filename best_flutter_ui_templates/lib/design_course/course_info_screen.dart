@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'design_course_app_theme.dart';
 
 class CourseInfoScreen extends StatefulWidget {
+  const CourseInfoScreen({super.key});
+
   @override
   _CourseInfoScreenState createState() => _CourseInfoScreenState();
 }
@@ -192,7 +194,7 @@ class _CourseInfoScreenState extends State<CourseInfoScreen>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
-                                  Container(
+                                  SizedBox(
                                     width: 48,
                                     height: 48,
                                     child: Container(
@@ -273,7 +275,7 @@ class _CourseInfoScreenState extends State<CourseInfoScreen>
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50.0)),
                   elevation: 10.0,
-                  child: Container(
+                  child: SizedBox(
                     width: 60,
                     height: 60,
                     child: Center(

@@ -7,12 +7,11 @@ import 'model/hotel_list_data.dart';
 
 class HotelListView extends StatelessWidget {
   const HotelListView(
-      {Key? key,
+      {super.key,
       this.hotelData,
       this.animationController,
       this.animation,
-      this.callback})
-      : super(key: key);
+      this.callback});
 
   final VoidCallback? callback;
   final HotelListData? hotelData;
@@ -61,7 +60,7 @@ class HotelListView extends StatelessWidget {
                             ),
                             Container(
                               color: HotelAppTheme.buildLightTheme()
-                                  .colorScheme.background,
+                                  .colorScheme.surface,
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
